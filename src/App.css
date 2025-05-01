@@ -15,4 +15,35 @@
   --coyote: #836328ff;
   --flame: #E36135ff;
   --antiflash-white-3: #F2F2F4ff;
+
+  --animate-fade-in-1: fadein 1s ease-in-out;
+  --animate-fade-in-2: fadein 1.2s ease-in-out;
+  --animate-fade-in-3: fadein 1.4s ease-in-out;
+  --animate-fade-in-4: fadein 1.6s ease-in-out;
+  --animate-fade-in-5: fadein 1.8s ease-in-out;
+  --animate-fade-in-6: fadein 2s ease-in-out;
+
+  --animate-fade-out-1: fadeout 1s ease-in-out;
+  --animate-fade-out-2: fadeout 1.2s ease-in-out;
+  --animate-fade-out-3: fadeout 1.4s ease-in-out;
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeout {
+  0%{
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
